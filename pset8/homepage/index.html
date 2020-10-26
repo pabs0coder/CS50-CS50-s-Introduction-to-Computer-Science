@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <link rel = "icon" href =img/duckico.png type = "image/x-icon">
+
+        <title>pabs0coder for CS50</title>
+    </head>
+    <body>
+      <script src="/path/to/flickity.pkgd.min.js"></script>
+         <table id="top_menu">
+             <tr>
+                 <th><a class="btn btn-primary" role="button" id="index_but" href="index.html">Home Page</a></th>
+                 <th><a class="btn btn-primary" role="button" id="second_but" href="second.html">Second Page</a></th>
+                 <th><a class="btn btn-primary" role="button" id="third_but" href="third.html">Third Page</a></th>
+             </tr>
+         </table>
+
+    <section>
+      <audio id="myAudio">
+
+  <source src="vai_ma.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+</script>
+    </section>
+
+<h1>CSS-only Carousel</h1>
+<p>This carousel is my adaptation.</p>
+<section>
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="/img/3.jpg"
+           class="carousel__prev">Go to last slide</a>
+        <a href="/img/2.jpg"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="/img/1.jpg"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="/img/3.jpg"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="/img/2.jpg"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="/img/1.jpg"
+         class="carousel__next">Go to next slide</a>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+</section>
+
+    <p> <a id="more_info" href="https://en.wikipedia.org/w/index.php?title=Xativa_Castle&oldid=861371691"> Click here for extra info about Xativa's Castle</a> </p>
+
+<h2>HTML Forms</h2>
+
+<form method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit"><br><br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<p>If you click the "Submit" button, the form-data will not be sent .</p>
+
+<h2>Responsive Column Cards to move</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><a href="index.html">Page 1</a></h3>
+      <p>Move to page 1</p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><a href="second.html">Page 2</a></h3>
+      <p>Move to page 2</p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><a href="third.html"> Page 3</a></h3>
+      <p>Move to page 3</p>
+      <p></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+    </body>
+
+</html>
