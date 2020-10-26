@@ -1,0 +1,11 @@
+#include <cs50.h>
+#include <stdio.h>
+
+
+int main(void)
+
+ask for height
+if less than 1 or bigger than 8 ask for height again
+iteration
+for i
+print i lines of # + \n
